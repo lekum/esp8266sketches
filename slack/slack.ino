@@ -11,16 +11,16 @@ const int buttonPin = D6;
 /*
  WIFI CONFIGURATION
  */
-const String SSID = "YOUR_SSID"
-const String pwd = "YOUR_PASSWORD"
+const String SSID = "<YOUR_SSID>"
+const String pwd = "<YOUR_PASSWORD>"
 
 /*
  SLACK CONFIGURATION
  */
-const String slack_hook_url = "SLACK_HOOK_URL";
-const String slack_icon_url = "SLACK_ICON_URL";
-const String slack_message = "SLACK_MESSAGE";
-const String slack_username = "SLACK_USERNAME";
+const String slack_hook_url = "<SLACK_HOOK_URL>";
+const String slack_icon_url = "<SLACK_ICON_URL>";
+const String slack_message = "<SLACK_MESSAGE>";
+const String slack_username = "<SLACK_USERNAME>";
 
 void setup()
 {
@@ -65,7 +65,8 @@ void setup()
 
 
 
-bool postMessageToSlack(String msg) {
+bool postMessageToSlack(String msg)
+{
   const char* host = "hooks.slack.com";
   Serial.print("Connecting to ");
   Serial.println(host);
@@ -103,8 +104,9 @@ bool postMessageToSlack(String msg) {
   }
 }
 
-void loop() {
+void loop()
 
+{
   // Start handling OTA updates
   ArduinoOTA.handle();
 

@@ -57,7 +57,7 @@ if __name__ == "__main__":
             ok = to_slack(slack_hook_url, slack_icon_url, slack_message, slack_username)
             # If succeed, light the LED during 1s
             if ok:
-                print("Succeded posting to Slack")
+                print("Succeeded posting to Slack")
                 led.high()
                 time.sleep(1)
             else:

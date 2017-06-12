@@ -11,8 +11,8 @@ const int buttonPin = D6;
 /*
  WIFI CONFIGURATION
  */
-const String SSID = "<YOUR_SSID>"
-const String pwd = "<YOUR_PASSWORD>"
+char SSID[] = "<YOUR_SSID>";
+char pwd[] = "<YOUR_PASSWORD>";
 
 /*
  SLACK CONFIGURATION
